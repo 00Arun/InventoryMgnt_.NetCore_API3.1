@@ -10,7 +10,7 @@ namespace InventoryBooks.Helper
     {
         public static int CalculateTotalPages(long numberOfRecords, Int32 pageSize)
         {
-            long result;
+            long result;   
             int totalPages;
             Math.DivRem(numberOfRecords, pageSize, out result);
             if (result > 0)
